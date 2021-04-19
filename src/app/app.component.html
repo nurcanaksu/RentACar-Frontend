@@ -1,0 +1,29 @@
+<!-- Welcome to {{title}}
+<br>
+Hello {{user}}
+<br>
+built-in  anguların kendi içinde olan demek
+<br>
+{{brand1.brandName}}
+<ul>
+    <li *ngFor= "let brand of brands" >{{brand.brandName}}</li>
+</ul> -->
+
+<!--buraya başlıkları yaz..-->
+<!--bootstrapteki row 12 eşit parçaya böler..-->
+
+<div class="container">
+  <app-navi></app-navi>
+  <div class="row">
+    <div class="col-md-3">
+      <app-brand></app-brand>
+      <app-color></app-color>
+      <app-customer></app-customer>
+      <app-car></app-car>
+      <app-rental></app-rental>
+    </div>
+    <div class="col-md-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

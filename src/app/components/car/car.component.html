@@ -1,0 +1,28 @@
+<table class="table">
+  <!--bootstrap class ı table-->
+
+  <thead>
+    <tr>
+
+      <th>Marka ID</th>
+      <th>Car Name</th>
+      <th>Color ID</th>
+      <th>Daily Price</th>
+      <th>Desription</th>
+      <th>Model Year</th>
+    </tr>
+  </thead>
+
+  <tr 
+
+  
+  *ngFor="let car of cars">
+    <td>{{car.brandID}} </td>
+    <!-- <td>{{ car.brandName }}</td> -->
+    <td>{{ car.carName }}</td>
+    <td>{{ car.colorID }}</td>
+    <td>{{ car.dailyPrice }}</td>
+    <td>{{ car.description }}</td>
+    <td>{{ car.modelYear }}</td>
+  </tr>
+</table>

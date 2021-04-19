@@ -1,0 +1,31 @@
+<!-- <ul class="list-group">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+</ul> -->
+
+<table class="table">
+  <!--bootstrap class ı table-->
+
+  <thead>
+    <tr>
+      <th>Color Name</th>
+    </tr>
+  </thead>
+
+  <tr class="list-group">
+    <!-- <td>{{color.id}}</td> -->
+    <td
+      (click)= "setCurrentColor(color)"
+      routerLink="/cars/color/{{ color.id }}"
+      *ngFor= "let color of colors"
+      [class]= "getCurrentColorClass(color)"
+    >
+      {{ color.colorName }}
+    </td>
+  </tr>
+</table>
+
+<h5 *ngIf= "currentColor">{{ currentColor.colorName }} seçtiniz..</h5>
