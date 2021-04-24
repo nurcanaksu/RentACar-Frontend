@@ -1,13 +1,14 @@
 import { CarImage } from "./carImage";
 
-export interface Car { //carDetail
-    //carname i int yapıp tabloyu değiştireblirsin view designdan
+export interface Cardetail{ //carDetailDto
+    id:number;
     carName:string;
     brandID:number;
-    brandName:string;
+    colorID:number;
     modelYear:number;
     dailyPrice:number;
     description:string;
-    colorID:number;
+    brandName:string;
+    colorName:string;
     carImage: CarImage[];
 }
